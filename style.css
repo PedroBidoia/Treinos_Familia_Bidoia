@@ -10,6 +10,13 @@ h1 {
     color: #333;
 }
 
+.user-options {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .user-options button {
     padding: 10px 20px;
     margin: 10px;
