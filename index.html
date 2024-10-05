@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Treino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Escolha seu nome</h1>
+    <div class="user-options">
+        <button onclick="escolherUsuario('odair')">Odair</button>
+        <button onclick="escolherUsuario('pedro')">Pedro</button>
+        <button onclick="escolherUsuario('marcia')">Marcia</button>
+        <button onclick="escolherUsuario('caroline')">Caroline</button>
+    </div>
+
+    <h2 id="usuarioTitle"></h2>
+
+    <!-- Seção para escolher o treino (A, B, C, etc.) -->
+    <div id="treinoOptions" style="display:none;">
+        <h3>Escolha o Treino</h3>
+        <div id="treinoButtons"></div>
+    </div>
+
+    <!-- Seção onde os exercícios serão exibidos -->
+    <div id="treinoContainer" style="display:none;"></div>
+
+    <script src="exercicios.js"></script>
+    <script src="treinos.js"></script>
+    <script>
+        let usuarioSelecionado = ""; // Para armazenar o usuário escolhido
+
+        // Função para escolher o usuário e exibir as opções de treino
+        function escolherUsuario(usuario) {
+            usuarioSelecionado = usuario;
+            document.getElementById('usuarioTitle').innerText = `Treinos de ${usuario.charAt(0).toUpperCase() + usuario.slice(1)}`;
+            document.getElementById('treinoContainer').style.display = "none";
+            document.getElementById('treinoButtons').innerHTML = ""; // Limpar opções de treino anteriores
+            document.getElementById('treinoOptions').style.display = "block"; // Mostrar a seleção de treinos
+
+            const treinos = treinosUsuarios[usuarioSelecionado];
+            for (const treino in treinos) {
+                const btn = document.createElement('button');
+                btn.innerText = `Treino ${treino}`;
+                btn.onclick = function() { loadTreinos(treino); }; // Carregar os exercícios ao clicar
+                document.getElementById('treinoButtons').appendChild(btn);
+            }
+        }
+
+        // Função para carregar os exercícios de acordo com o treino escolhido
+        function loadTreinos(treino) {
+            const treinoContainer = document.getElementById('treinoContainer');
+            treinoContainer.innerHTML = ""; // Limpar treinos anteriores
+            treinoContainer.style.display = "flex"; // Mostrar os exercícios
+            treinoContainer.style.flexWrap = "wrap"; // Exibir os blocos de exercícios
+            const grupos = treinosUsuarios[usuarioSelecionado][treino]; // Puxar os grupos musculares do treino
+
+            for (const grupoMuscular in grupos) {
+                const exerciciosIDs = grupos[grupoMuscular]; // Puxar IDs dos exercícios
+
+                exerciciosIDs.forEach(exercicioID => {
+                    const exercicio = todosExercicios[grupoMuscular].find(ex => ex.id === exercicioID);
+
+                    if (exercicio) {
+                        const exercicioDiv = document.createElement('div');
+                        exercicioDiv.classList.add('exercise-box'); // Adiciona a classe para estilo visual em bloco
+                        exercicioDiv.innerHTML = `
+                            <h4>${exercicio.nome}</h4>
+                            <img src="${exercicio.imagem}" alt="${exercicio.nome}">
+                            <p><strong>Séries:</strong> ${exercicio.series}</p>
+                            <p><strong>Descrição:</strong> ${exercicio.descricao}</p>
+                        `;
+                        treinoContainer.appendChild(exercicioDiv);
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
+
