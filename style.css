@@ -67,10 +67,11 @@ h1 {
 
 .exercise-box img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
+    height: auto; /* Ajusta a altura proporcionalmente à largura */
+    object-fit: contain; /* A imagem será ajustada dentro do container sem cortes */
+    max-height: 200px; /* Define uma altura máxima para controlar o tamanho das imagens */
 }
+
 
 h4 {
     margin-bottom: 10px;
