@@ -1,7 +1,7 @@
 const treinosUsuarios = {
     "odair": {
         "A": {
-            "peito": ["supino_reto", "supino_inclinado"], // Odair faz Supino Reto e Supino Inclinado no treino A
+            "peito": ["supino_reto", "supino_inclinado"],
             "triceps": ["triceps_corda"]
         },
         "B": {
@@ -13,7 +13,7 @@ const treinosUsuarios = {
     },
     "pedro": {
         "A": {
-            "peito": ["supino_inclinado","supino_reto_halteres","pullover","crucifixo_polia_flexao"], // Pedro faz apenas Supino Reto no treino A
+            "peito": ["supino_inclinado","supino_reto_halteres","pullover","crucifixo_polia_flexao"], 
             "triceps": ["triceps_corda","triceps_testa_polia","triceps_frances_polia"]
         },
         "B": {
