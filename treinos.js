@@ -13,8 +13,8 @@ const treinosUsuarios = {
     },
     "pedro": {
         "A": {
-            "peito": ["supino_reto_halteres","supino_inclinado_halteres","peckdeck_flexao","crossover"], // Pedro faz apenas Supino Reto no treino A
-            "triceps": ["triceps_corda","triceps_barra_dropset","triceps_mergulho"]
+            "peito": ["supino_inclinado","supino_reto_halteres","pullover","crucifixo_polia_flexao"], // Pedro faz apenas Supino Reto no treino A
+            "triceps": ["triceps_corda","triceps_testa_polia","triceps_frances_polia"]
         },
         "B": {
             "costas": ["puxada_frontal"]
