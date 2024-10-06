@@ -6,7 +6,9 @@ const todosExercicios = {
         { id: "crossover", nome: "CrossOver", imagem: "imgs\crossover.png", series: "3x10", descricao: "Vá na polia, pegue os dois lados, leve para o alto, e empurre como se fosse uma barra"}
     ],
     "triceps": [
-        { id: "triceps_corda", nome: "Tríceps Corda", imagem: "triceps-corda.jpg", series: "4x12", descricao: "Use a corda para estender os braços." }
+        { id: "triceps_corda", nome: "Tríceps Corda", imagem: "imgs\triceps_corda.png", series: "4x12", descricao: "Use a corda para estender os braços." },
+        { id: "triceps_barra_dropset", nome: "Tríceps Barra DropSet", imagem: "imgs\triceps_barra_dropset.png", series: "4x12", descricao: "Use a corda para estender os braços." },
+        { id: "triceps_mergulho", nome: "Tríceps Mergulho", imagem: "imgs\triceps_mergulho.png", series: "4x12", descricao: "Use a corda para estender os braços." }
     ],
     "costas": [
         { id: "puxada_frontal", nome: "Puxada Frontal", imagem: "puxada-frontal.jpg", series: "4x12", descricao: "Puxe a barra para frente do corpo." }
