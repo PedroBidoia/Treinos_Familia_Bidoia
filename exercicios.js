@@ -18,8 +18,18 @@ const todosExercicios = {
         { id: "triceps_mergulho", nome: "Tríceps Mergulho", imagem: "imgs/triceps_mergulho.png", series: "4x12", descricao: "Vá até o banco, e apoiando nele, desça até quase o chão." }
     ],
     "costas": [
-        { id: "puxada_frontal", nome: "Puxada Frontal", imagem: "imgs/puxada-frontal.jpg", series: "4x12", descricao: "Puxe a barra para frente do corpo." }
+        { id: "puxada_alta_articulada", nome: "Puxada alta Articulada", imagem: "imgs/puxada_alta_articulada.png", series: "4x12", descricao: "Vá até a maquina de puxada articulada, e faça o movimento para baixo, 'Costas para trás'." },
+        { id: "puxada_alta_militar", nome: "Puxada Militar", imagem: "imgs/puxada_alta_militar.jpg", series: "4x12", descricao: "Puxe a barra pela frente do corpo, com os cotovelos para frente." },
+        { id: "remada_triangulo", nome: "Remada com o Triângulo", imagem: "imgs/remada_triangulo.jpg", series: "4x12", descricao: "Sente no banco, coloque o triângulo na parte de baixo e puxe para trás" },
+        { id: "remada_articulada", nome: "Remada Articulada", imagem: "imgs/remada_articulada.jpg", series: "4x12", descricao: "Vá até a maquina, e puxe mantendo os cotovelos estaveis, peito estufado" }
     ],
+    "biceps": [
+        { id: "biceps_barrinha_polia", nome: "Biceps com a Barrinha na Polia", imagem: "imgs/biceps_barrinha_polia.png", series: "4x12", descricao: "Vá até a polia, coloque ela em baixo, coloque a barrinha e levante a barrinha, mantendo o cotovelo estavel." },
+        { id: "rosca_alternada_pe", nome: "Rosca Alternada em Pé", imagem: "imgs/rosca_alternada_pe.jpg", series: "4x10+10", descricao: "Pegue dois pesos, e levante eles alternadamente" }
+    ],
+    "antebraço": [
+        { id: "antebraco_barrinha_polia", nome: "Antebraço com a Barrinha na Polia", imagem: "imgs/antebraco_barrinha_polia.png", series: "4x12", descricao: "Vá até a polia, coloque ela em baixo, coloque a barrinha e levante a barrinha, segurando com a palma da mão para baixo." }    
+    ]
     "pernas": [
         { id: "agachamento", nome: "Agachamento", imagem: "imgs/agachamento.jpg", series: "4x10", descricao: "Agache com a barra nas costas." }
     ],
