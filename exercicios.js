@@ -28,7 +28,7 @@ const todosExercicios = {
         { id: "elevacao_frontal_halteres", nome: "Elevação Frontal com Halteres", imagem: "imgs/elevacao_frontal_halteres.png", series: "4x12", descricao: "Pegue dois halteres e levante eles pela frente até a altura dos ombros" }
     ],
     "body": [
-        { id: "prancha", nome: "Prancha", imagem: "imgs/prancha.jpg", series: "4x Até a falha", descricao: "Fique apoiado pelo cotovelos e pelo pé, mantendo o corpo reto." }
+        { id: "prancha", nome: "Prancha", imagem: "imgs/prancha.png", series: "4x Até a falha", descricao: "Fique apoiado pelo cotovelos e pelo pé, mantendo o corpo reto." }
     ]
     // Adicione mais grupos musculares e exercícios aqui
 };
