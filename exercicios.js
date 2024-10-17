@@ -24,7 +24,7 @@ const todosExercicios = {
         { id: "remada_articulada", nome: "Remada Articulada", imagem: "imgs/remada_articulada.jpg", series: "4x12", descricao: "Vá até a maquina, e puxe mantendo os cotovelos estaveis, peito estufado" }
     ],
     "biceps": [
-        { id: "biceps_barrinha_polia", nome: "Biceps com a Barrinha na Polia", imagem: "imgs/biceps_barrinha_polia.png", series: "4x12", descricao: "Vá até a polia, coloque ela em baixo, coloque a barrinha e levante a barrinha, mantendo o cotovelo estavel." },
+        { id: "biceps_barrinha_polia", nome: "Biceps com a Barrinha na Polia", imagem: "imgs/biceps_barrinha_polia.jpg", series: "4x12", descricao: "Vá até a polia, coloque ela em baixo, coloque a barrinha e levante a barrinha, mantendo o cotovelo estavel." },
         { id: "rosca_alternada_pe", nome: "Rosca Alternada em Pé", imagem: "imgs/rosca_alternada_pe.jpg", series: "4x10+10", descricao: "Pegue dois pesos, e levante eles alternadamente" }
     ],
     "antebraço": [
