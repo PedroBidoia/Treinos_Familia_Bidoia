@@ -24,15 +24,20 @@ const treinosUsuarios = {
         }
     },
     "marcia": {
-        "A": {
-            "pernas": ["agachamento"]
+        "Terça-Feira": {
+            "peito": ["supino_reto_maq", "supino_inclinado_halteres"],
+            "triceps": ["triceps_barra", "triceps_corda"],
+            "ombros": ["elevacao_lateral_pe", "elevacao_frontal_halteres"],
+            "body": ["prancha"]
         },
-        "B": {
-            "peito": ["supino_inclinado"],
-            "costas": ["puxada_frontal"]
+        "Quinta-Feira": {
+            "costas": ["puxada_alta_articulada", "puxada_alta_militar", "remada_triangulo", "remada_articulada"],
+            "biceps": ["biceps_barrinha_polia", "rosca_alternada_pe"],
+            "antebraco": ["antebraco_barrinha_polia"]
         },
-        "C": {
-            "triceps": ["triceps_corda"]
+        "Seg/Qua/Sex": {
+            "pernas": ["agachamento_bola", "leg_45", "cadeira_flexora", "cadeira_extensora", "adutora", "abdutora", "leg_horizontal_separados"],
+            "panturrilhas": ["panturrilha_banco"]
         }
     },
     "caroline": {
