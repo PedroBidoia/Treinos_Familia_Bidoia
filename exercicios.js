@@ -29,7 +29,7 @@ const todosExercicios = {
     ],
     "antebraço": [
         { id: "antebraco_barrinha_polia", nome: "Antebraço com a Barrinha na Polia", imagem: "imgs/antebraco_barrinha_polia.png", series: "4x12", descricao: "Vá até a polia, coloque ela em baixo, coloque a barrinha e levante a barrinha, segurando com a palma da mão para baixo." }    
-    ]
+    ],
     "pernas": [
         { id: "agachamento", nome: "Agachamento", imagem: "imgs/agachamento.jpg", series: "4x10", descricao: "Agache com a barra nas costas." }
     ],
